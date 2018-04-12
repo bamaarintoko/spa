@@ -23,7 +23,14 @@ class App extends React.Component {
 								value:'#FF6D00'
 							},
 							size:{
-								value:5
+								value:4,
+								anim:{
+									enable:true
+								}
+								
+							},
+							shape:{
+								type:'triangle'
 							}
 						}
 					}} />
