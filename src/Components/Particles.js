@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Particles_ from 'react-particles-js'
-// import './a.css'
+import './wrap.css'
 class Particles extends React.Component {
 	render() {
 		return (
-			<div style={{ backgroundColor: '#212121' }}>
+			<div className={"wrapper"} style={{ width: '100vw',height: '100vh', backgroundColor: '#212121' }}>
 				<Particles_
+                style={{width: '100%'}}
 					params={{
 						particles: {
 							number: {
@@ -33,7 +34,9 @@ class Particles extends React.Component {
 								type:'triangle'
 							}
 						}
-					}} />
+					}}>
+                    {this.props.children}
+                    </Particles_>
 			</div>
 		);
 	}
