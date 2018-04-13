@@ -52,7 +52,7 @@ class PageHome extends React.Component {
 								}
 							}
 						}} />
-					<Navbar brand='' right style={{ backgroundColor: '#212121', border: 0, position: 'fixed' }}>
+					<Navbar brand='' right style={{ backgroundColor: '#212121', border: 0, position:'absolute' }}>
 						<NavItem>Home</NavItem>
 						<NavItem >Our Team</NavItem>
 						<NavItem href='#'>Our Story</NavItem>
