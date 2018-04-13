@@ -6,8 +6,8 @@ import './wrap.css'
 class Particles extends React.Component {
 	render() {
 		return (
-			<div style={{height: '100vh',
-				width: '100vw',backgroundColor:'#212121'}}>
+			<div style={{
+				width: '100vw',backgroundColor:'#000000'}}>
 
 
 				<Particles_
@@ -15,8 +15,7 @@ class Particles extends React.Component {
 						width: '100%', position: "fixed",
 						top: 0,
 						left: 0,
-						width: "100%",
-						height: "100%"
+						width: "100%"
 					}}
 					params={{
 						particles: {
