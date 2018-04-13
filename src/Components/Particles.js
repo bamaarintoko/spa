@@ -1,13 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Particles_ from 'react-particles-js'
+import { Navbar, NavItem, Icon } from 'react-materialize'
 import './wrap.css'
 class Particles extends React.Component {
 	render() {
 		return (
-			<div className={"wrapper"} style={{ width: '100vw',height: '100vh', backgroundColor: '#212121' }}>
+			<div style={{height: '100vh',
+				width: '100vw',backgroundColor:'#212121'}}>
+
+
 				<Particles_
-                style={{width: '100%'}}
+					style={{
+						width: '100%', position: "fixed",
+						top: 0,
+						left: 0,
+						width: "100%",
+						height: "100%"
+					}}
 					params={{
 						particles: {
 							number: {
@@ -20,23 +30,27 @@ class Particles extends React.Component {
 									blur: 5
 								}
 							},
-							color:{
-								value:'#FF6D00'
+							color: {
+								value: '#FF6D00'
 							},
-							size:{
-								value:4,
-								anim:{
-									enable:true
+							size: {
+								value: 4,
+								anim: {
+									enable: true
 								}
-								
+
 							},
-							shape:{
-								type:'triangle'
+							shape: {
+								type: 'triangle'
 							}
 						}
-					}}>
-                    {this.props.children}
-                    </Particles_>
+					}} />
+				<Navbar brand='malaskoding.com' right style={{backgroundColor:'#212121'}}>
+                    <NavItem href='#'>Home</NavItem>
+                    <NavItem href='#'>Our Team</NavItem>
+                    <NavItem href='#'>Our Story</NavItem>
+                    <NavItem href='#'>About</NavItem>
+                </Navbar>
 			</div>
 		);
 	}
