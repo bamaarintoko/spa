@@ -45,12 +45,7 @@ class Particles extends React.Component {
 							}
 						}
 					}} />
-				<Navbar brand='malaskoding.com' right style={{backgroundColor:'#212121'}}>
-                    <NavItem href='#'>Home</NavItem>
-                    <NavItem href='#'>Our Team</NavItem>
-                    <NavItem href='#'>Our Story</NavItem>
-                    <NavItem href='#'>About</NavItem>
-                </Navbar>
+				
 			</div>
 		);
 	}
