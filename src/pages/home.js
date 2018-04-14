@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Particles_ from 'react-particles-js'
-import { Navbar, NavItem, Icon } from 'react-materialize';
+import { Navbar, NavItem, Icon, Col, Row } from 'react-materialize';
+import Footer from "react-materialize/lib/Footer";
+import Footer_ from "./footer";
 // import styles from './wrap.css'
 // import './a.css'
 class PageHome extends React.Component {
@@ -52,16 +54,28 @@ class PageHome extends React.Component {
 								}
 							}
 						}} />
-						
-					<Navbar brand='' right style={{ backgroundColor: '#212121', border: 0, position:'absolute' }}>
+
+					<Navbar brand='' right style={{ backgroundColor: '#212121', border: 0, position: 'absolute' }}>
 						<NavItem>Home</NavItem>
 						<NavItem >Our Team</NavItem>
 						<NavItem href='#'>Our Story</NavItem>
 						<NavItem href='google.com'>About</NavItem>
 					</Navbar>
-					<div style={{position:'absolute', bottom:0}}>
-							<h2>aaaaaaa</h2>
-						</div>
+					<div style={{position:'absolute',display:'block',width:'100%', bottom:0}}
+						>
+						<Row>
+							<Col m={2}>
+							</Col>
+							<Col m={8}>
+							<h5 className="white-text">Footer Content</h5>
+							<p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+							</Col>
+							<Col m={2}>
+							</Col>
+						</Row>
+							
+						</div>;
+					
 				</div>
 			</div>
 		);
